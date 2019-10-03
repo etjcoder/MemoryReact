@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
-import MemoryCard from "./MemoryCard"
-import clickitems from "../clickitems.json"
+import MemoryCard from "../MemoryCard/MemoryCard"
+import clickitems from "../../clickitems.json"
+import Wrapper from "../Wrapper/Wrapper"
+import Jumbotron from "../Jumbotron"
+import Header from "../Header"
+import "./style.css"
 
 
 
@@ -29,7 +33,7 @@ class GameContainer extends Component {
   randomizeItems = () => {
 
     // var currentArray = this.state.clickItems;
-    console.log("pre-randomize: " + JSON.stringify(this.state.clickItems[0].id))
+    // console.log("pre-randomize: " + JSON.stringify(this.state.clickItems[0].id))
 
     for (var i = this.state.clickItems.length - 1; i > 0; i--) {
       var j = Math.floor(Math.random() * (i + 1));
@@ -38,16 +42,16 @@ class GameContainer extends Component {
       this.state.clickItems[j] = temp;
     }
 
-    console.log("post-randomize: " + JSON.stringify(this.state.clickItems[0].id));
+    // console.log("post-randomize: " + JSON.stringify(this.state.clickItems[0].id));
     // console.log(this.state.clickItems)
 
   }
 
   //This handles the users guess and passes it into the handleSubmit function
-  checkValue = (event) => {
-    const value = event.target.value;
-    // console.log(value)
-    this.handleSubmit(value);
+  checkValue = (id) => {
+    // const value = event.target.value;
+    console.log(id)
+    this.handleSubmit(id);
   }
 
   //This is where the app checks if the user's guess exists in the user's current guess array
@@ -93,11 +97,22 @@ class GameContainer extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Memory Game</h1>
-        <h2>High Score: {this.state.highScore}</h2>
-        <h3>Score: {this.state.score}</h3>
+      <div className=""> 
+        <Jumbotron>
+        <Header score={this.state.score} highScore={this.state.highScore}/>
+        </Jumbotron>
+        <Wrapper>
         <div className="row">
+          {this.state.clickItems.map(memCard => (
+            <MemoryCard 
+            name={memCard.name}
+            image={memCard.image}
+            id={memCard.id}
+            handleClick={this.checkValue}
+            />
+          ))}
+          
+{/*           
           <MemoryCard
             name={this.state.clickItems[0].name}
             image={this.state.clickItems[0].image}
@@ -140,8 +155,9 @@ class GameContainer extends Component {
             id={this.state.clickItems[5].id}
             handleClick={this.checkValue}
           // value={id}
-          />
+          /> */}
         </div>
+        </Wrapper>
       </div>
     )
   }

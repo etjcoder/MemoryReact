@@ -9,9 +9,6 @@ function About() {
 
     return (
       <div className=""> 
-        <Jumbotron>
-        <h1>Rules for this Game</h1>
-        </Jumbotron>
         <Wrapper>
         
         <div className="card">

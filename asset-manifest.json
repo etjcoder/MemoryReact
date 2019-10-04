@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/MemoryReact/static/css/main.a3922ca0.chunk.css",
-    "main.js": "/MemoryReact/static/js/main.9c48e67e.chunk.js",
-    "main.js.map": "/MemoryReact/static/js/main.9c48e67e.chunk.js.map",
+    "main.js": "/MemoryReact/static/js/main.2605baec.chunk.js",
+    "main.js.map": "/MemoryReact/static/js/main.2605baec.chunk.js.map",
     "runtime-main.js": "/MemoryReact/static/js/runtime-main.fa376dd8.js",
     "runtime-main.js.map": "/MemoryReact/static/js/runtime-main.fa376dd8.js.map",
     "static/js/2.20cd40a9.chunk.js": "/MemoryReact/static/js/2.20cd40a9.chunk.js",
     "static/js/2.20cd40a9.chunk.js.map": "/MemoryReact/static/js/2.20cd40a9.chunk.js.map",
     "index.html": "/MemoryReact/index.html",
-    "precache-manifest.b22ad9ebb505f5825e931006f0e5ff89.js": "/MemoryReact/precache-manifest.b22ad9ebb505f5825e931006f0e5ff89.js",
+    "precache-manifest.b0dc86443ffdeecd6fe288bf6b3f968c.js": "/MemoryReact/precache-manifest.b0dc86443ffdeecd6fe288bf6b3f968c.js",
     "service-worker.js": "/MemoryReact/service-worker.js",
     "static/css/main.a3922ca0.chunk.css.map": "/MemoryReact/static/css/main.a3922ca0.chunk.css.map"
   }

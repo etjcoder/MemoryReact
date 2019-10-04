@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/MemoryReact/static/css/main.559408ce.chunk.css",
+    "main.css": "/MemoryReact/static/css/main.9a406ca9.chunk.css",
     "main.js": "/MemoryReact/static/js/main.19319623.chunk.js",
     "main.js.map": "/MemoryReact/static/js/main.19319623.chunk.js.map",
     "runtime-main.js": "/MemoryReact/static/js/runtime-main.fa376dd8.js",
@@ -8,8 +8,8 @@
     "static/js/2.169990ca.chunk.js": "/MemoryReact/static/js/2.169990ca.chunk.js",
     "static/js/2.169990ca.chunk.js.map": "/MemoryReact/static/js/2.169990ca.chunk.js.map",
     "index.html": "/MemoryReact/index.html",
-    "precache-manifest.bf44258085c7c94943a2262aa1213544.js": "/MemoryReact/precache-manifest.bf44258085c7c94943a2262aa1213544.js",
+    "precache-manifest.6c23e3981f0440ea1e492db59149cf5e.js": "/MemoryReact/precache-manifest.6c23e3981f0440ea1e492db59149cf5e.js",
     "service-worker.js": "/MemoryReact/service-worker.js",
-    "static/css/main.559408ce.chunk.css.map": "/MemoryReact/static/css/main.559408ce.chunk.css.map"
+    "static/css/main.9a406ca9.chunk.css.map": "/MemoryReact/static/css/main.9a406ca9.chunk.css.map"
   }
 }
